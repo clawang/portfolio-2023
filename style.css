@@ -10,7 +10,8 @@
 
 @font-face {
   font-family: Anonymous Pro;
-  src: url('./media/AnonymousPro-Regular.ttf');
+  src: url('./media/FreePixel.ttf');
+  /*src: url('./media/AnonymousPro-Regular.ttf');*/
 }
 
 body { 
@@ -487,7 +488,7 @@ button:active {
 }
 
 .favorites-wrapper p {
-	font-size: 12px !important;
+	font-size: 12px;
 }
 
 .favorites-title {
@@ -503,6 +504,10 @@ button:active {
 	white-space: nowrap;
 	/*padding: 13px 10px;*/
 	margin: 0;
+}
+
+#scrolling-banner-text p {
+	font-size: 12px;
 }
 
 .open {

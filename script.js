@@ -113,6 +113,13 @@ window.addEventListener("load", function() {
 		});
 	}
 
+	const content = document.querySelector('#videography-page .content-window');
+	const video = document.getElementById('video');
+	if(content.clientWidth < 560) {
+		video.width = content.clientWidth-60;
+		video.height = (content.clientWidth-60)/560*315;
+	}
+
 	setMobile();
 });
 
