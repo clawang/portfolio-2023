@@ -716,7 +716,7 @@ button:active {
 
 
 	#scrolling-banner-text p {
-		font-size: 12px;
+		font-size: 12px !important;
 	}
 }
 
