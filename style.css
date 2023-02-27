@@ -124,13 +124,12 @@ button:active {
 }
 
 .icon-wrapper p {
-	/*font-family: FreePixel;*/
-	font-family: 'Anonymous Pro',Neue Haas Grotesk, Helvetica;
+	font-family: Anonymous Pro,Neue Haas Grotesk, Helvetica;
 	text-transform: uppercase;
 	color: white;
 	font-weight: 800;
-	-webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(0,0,0,0.1);
+/*	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0,0,0,0.1);*/
   margin: 0;
   text-align: center;
   font-size: 13px;
@@ -179,7 +178,7 @@ button:active {
 	margin: 0;
 	text-transform: uppercase;
 	font-size: 12px;
-	font-family: 'Anonymous Pro';
+	font-family: Anonymous Pro;
 	font-weight: 600;
 }
 
@@ -217,7 +216,7 @@ button:active {
 }
 
 .start-menu-option p {
-	font-family: 'Anonymous Pro';
+	font-family: Anonymous Pro;
 	font-size: 12px;
 	text-transform: uppercase;
 }
@@ -261,7 +260,7 @@ button:active {
 	margin: 0;
 	text-transform: uppercase;
 	font-size: 12px;
-	font-family: 'Anonymous Pro';
+	font-family: Anonymous Pro;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -318,7 +317,7 @@ button:active {
 	font-weight: 400;
 	letter-spacing: 1px;
 	color: white;
-	font-family: 'Anonymous Pro';
+	font-family: Anonymous Pro;
 }
 
 .window-title-bar .close-button {
@@ -431,7 +430,7 @@ button:active {
 }
 
 .content-window h2 {
-	font-family: 'Anonymous Pro',Neue Haas Grotesk;
+	font-family: Anonymous Pro,Neue Haas Grotesk;
 	color: #462ee2;
 	text-transform: uppercase;
 	text-align: center;
@@ -468,7 +467,7 @@ button:active {
 }
 
 #videography-page h3 {
-	font-family: 'Anonymous Pro',Neue Haas Grotesk;
+	font-family: Anonymous Pro,Neue Haas Grotesk;
 	color: #462ee2;
 	text-transform: uppercase;
 	text-align: center;
