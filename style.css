@@ -101,14 +101,15 @@ button:active {
 	overflow: hidden;
 	display: inline-block;
 	animation: scroll 20s linear infinite;
+	font-size: 12px;
 	/*padding-top: 5px;*/
 }
 
 #scrolling-banner-text p {
 	display: inline-block;
 	line-height: 0.7em;
-	/*margin: 0 10px 0 0;*/
 	margin: 0;
+	font-size: 12px;
 }
 
 #scrolling-banner-text:hover p {
@@ -506,10 +507,6 @@ button:active {
 	margin: 0;
 }
 
-#scrolling-banner-text p {
-	font-size: 12px;
-}
-
 .open {
 	transform: scale(1);
 }
@@ -715,6 +712,11 @@ button:active {
 	.content-window {
 		max-width: 100% !important;
 		box-sizing: border-box;
+	}
+
+
+	#scrolling-banner-text p {
+		font-size: 12px;
 	}
 }
 
