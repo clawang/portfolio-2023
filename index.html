@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ClaireOS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="./media/favicon.png">
+</head>
+
+<body>
+	<div id="container">
+		<!-- <div id="grain"></div> -->
+		<div class="popup-layer">
+			<div class="window-wrapper close" id="about-page">
+				<div class="window-title-bar">
+					<img src="./media/internet-icon.png" />
+	        <p>About Me</p>
+	        <p class="close-button">X</p>
+	      </div>
+	      <div class="inner-window">
+	        <div class="content-window">
+		        <div class="about-wrapper">
+		        	<h2>About Me</h2>
+		          <p>I'm Claire (王宇静), a bicoastal developer & designer based in SF and NYC. I work full-time as a software engineer at Google, working on music at YouTube, and I also do freelance web work for music artists.</p>
+		          <p>When I'm not doing that, I'm usually curating playlists, vintage shopping, cafe-hopping, or traveling.</p>
+		          <p>I graduated from NYU in 2021 with a B.A. in Computer Science and a minor in Web Programming and Applications.</p>
+	          </div>
+	          <div class="favorites-wrapper">
+	          	<div class="favorites-title"><p>Things I like</p></div>
+	          	<div id="scrolling-banner-wrapper">
+								<div id="scrolling-banner-text">
+									<p>retro technology &#9734; surrealist 3d art &#9734; uk garage &#9734; vintage streetwear &#9734; cyberpunk & vaporwave aesthetics &#9734; internet culture &#9734; retrofuturism &#9734; ghettotech &#9734;</p>
+									<p>retro technology &#9734; surrealist 3d art &#9734; uk garage &#9734; vintage streetwear &#9734; cyberpunk & vaporwave aesthetics &#9734; internet culture &#9734; retrofuturism &#9734; ghettotech &#9734;</p>
+								</div>
+							</div>
+	          </div>
+	        </div>
+	      </div>
+			</div>
+			<div class="window-wrapper close" id="info-page">
+				<div class="window-title-bar">
+					<img src="./media/globe-icon.png" id="app-icon"/>
+	        <p id="app-title"></p>
+	        <p class="close-button">X</p>
+	      </div>
+	      <div class="inner-window">
+	        <div class="content-window">
+		        <div class="info-wrapper">
+		          <p id="info-description"></p>
+		          <p id="info-subtitle"></p>
+		          <div class="buttons-wrapper">
+			          <button id="open-button">Open</button>
+			          <button id="cancel-button">Cancel</button>
+		          </div>
+	          </div>
+	        </div>
+	      </div>
+			</div>
+			<div class="window-wrapper close" id="fun-fact-page">
+				<div class="window-title-bar">
+					<img src="./media/folder-icon.png" />
+	        <p>File Explorer</p>
+	        <p class="close-button">X</p>
+	      </div>
+	      <div class="inner-window">
+	        <div class="window-nav-bar">
+	          <ul>
+	            <li>File</li>
+	            <li>Edit</li>
+	          </ul>
+	        </div>
+	        <div class="content-window fun-facts">
+	        	<div class="folder-wrapper">
+	        		<img src="./media/folder-open-icon.png">
+	        		<p class="playlist-name">things i've done</p>
+	        	</div>
+	        	<div class="folder-indent">
+	        		<div class="folder-wrapper" id="photography-folder">
+	        			<div class="folder-line"></div>
+	        			<div class="folder-placeholder ">
+	        				<img src="./media/folder-icon.png">
+	        				<p class="playlist-name">food photography</p>
+	        			</div>
+	        		</div>
+	        		<div class="folder-wrapper" id="travel-folder">
+	        			<div class="folder-line"></div>
+	        			<div class="folder-placeholder ">
+	        				<img src="./media/travel-icon.png">
+	        				<p class="playlist-name">travel</p>
+	        			</div>
+	        		</div>
+	        		<div class="folder-wrapper" id="spotify-folder">
+	        			<div class="folder-line"></div>
+	        			<div class="folder-placeholder ">
+	        				<img src="./media/mp3-icon.png">
+	        				<p class="playlist-name">curate playlists</p>
+	        			</div>
+	        		</div>
+	        		<div class="folder-wrapper" id="video-folder">
+	        			<div class="folder-line"></div>
+	        			<div class="folder-placeholder ">
+	        				<img src="./media/video-icon.png">
+	        				<p class="playlist-name">edit videos</p>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+	        <div class="bottom-bar">
+	      			<p>Total 4 file(s)</p>
+	      		</div>
+	      </div>
+			</div>
+			<div class="window-wrapper close" id="videography-page">
+				<div class="window-title-bar">
+					<img src="./media/video-icon.png" id="app-icon"/>
+	        <p id="app-title">Videography</p>
+	        <p class="close-button">X</p>
+	      </div>
+	      <div class="inner-window">
+	        <div class="content-window">
+		        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/p8_SikiWwhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		        <h3>DJI Billboard in Callao, Spain</h3>
+						<p>A quick advertisement I created to promote the DJI Mavic Air during my summer internship. The video on the right is the file I made, the video on the left is it playing live in a square in Callao, Spain.</p>
+	        </div>
+	      </div>
+			</div>
+			<div class="window-wrapper close" id="contact-page">
+				<div class="window-title-bar">
+					<img src="./media/phone-icon.png" id="app-icon"/>
+	        <p id="app-title">Contact</p>
+	        <p class="close-button">X</p>
+	      </div>
+	      <div class="inner-window">
+	        <div class="content-window">
+		        <div class="info-wrapper">
+		        	<h2>Contact</h2>
+		        	<div class="links-wrapper">
+		        		<div class="link">
+		        			<img src="./media/github.png" />
+				          <a href="https://github.com/clawang"><p>Github</p></a>
+				        </div>
+			          <div class="link">
+		        			<img src="./media/linkedin.png" />
+				          <a href="https://www.linkedin.com/in/clawang/"><p>Linkedin</p></a>
+				        </div>
+				        <div class="link">
+		        			<img src="./media/email.png" />
+				          <a href="mailto:cyw336@nyu.edu"><p>Email</p></a>
+				        </div>
+			        </div>
+	          </div>
+	        </div>
+	      </div>
+			</div>
+		</div>
+		<div id="icons-container"></div>
+		<div class="start-bar">
+			<div class="start-button">
+				<img src="./media/favicon.png">
+				<p>Claire Wang</p>
+			</div>
+			<div class="start-menu close">
+				<div class="start-menu-sidebar"></div>
+				<div class="start-menu-options">
+					 <div class="start-menu-option" id="file-explorer-link">
+					 	<img src="./media/folder-icon.png">
+					 	<p>File Explorer</p>
+					 </div>
+					 <div class="start-menu-option" id="contact-link">
+					 	<img src="./media/folder-icon.png">
+					 	<p>Contact</p>
+					 </div>
+				</div>
+			</div>
+			<div id="open-windows-container"></div>
+			<div class="bottom-bar start-bar-time ">
+				<p id="time-string"></p>
+			</div>
+		</div>
+	</div>
+	<div class="mobile-mode">
+		<h3>Click to enter site</h3>
+	</div>
+  <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+	<script type="importmap">
+	  {
+	    "imports": {
+	      "three": "https://unpkg.com/three@0.149.0/build/three.module.js",
+	      "three/addons/": "https://unpkg.com/three@0.149.0/examples/jsm/"
+	    }
+	  }
+	</script>
+	<script type="module" src="./icons.js"></script>
+  <script type="module" src="./script.js"></script>
+  <script type="module" src="./three-d.js"></script>
+</body>
+</html>
