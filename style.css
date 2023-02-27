@@ -8,13 +8,16 @@
   src: url('./media/NeueHaasGrotesk.ttf');
 }
 
+@font-face {
+  font-family: Anonymous Pro;
+  src: url('./media/AnonymousPro-Regular.ttf');
+}
+
 body { 
 	margin: 0;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	/*background: url('example-bg.jpeg');
-	background-size: cover;*/
 }
 
 p {
