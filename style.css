@@ -78,44 +78,6 @@ button:active {
 	z-index: 1;
 }
 
-#scrolling-banner-wrapper {
-	width: 100%;
-	background: #48e5ff;
-	text-transform: uppercase;
-	font-family: "Helvetica";
-	padding: 10px 0;
-	/*height: 20px;*/
-	overflow: hidden;
-}
-
-.scrolling-text-wrapper {
-	max-width: 100%;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	margin: 0 0 2em;
-	overflow: hidden;
-}
-
-#scrolling-banner-text {
-	white-space: nowrap;
-	overflow: hidden;
-	display: inline-block;
-	animation: scroll 20s linear infinite;
-	font-size: 12px;
-	/*padding-top: 5px;*/
-}
-
-#scrolling-banner-text p {
-	display: inline-block;
-	line-height: 0.7em;
-	margin: 0;
-	font-size: 12px;
-}
-
-#scrolling-banner-text:hover p {
-	font-style: italic;
-}
-
 .icon-wrapper {
 	position: absolute;
 	width: 100px;
@@ -163,7 +125,7 @@ button:active {
 .start-button {
 	display: flex;
 	align-items: center;
-	width: 110px;
+	width: 100px;
 	height: 25px;
 	border: 2px outset #fff;
 	cursor: pointer;
@@ -215,7 +177,7 @@ button:active {
 	cursor: pointer;
 }
 
-.start-menu-option:hover {
+.start-menu-option:hover, .start-menu-option:active  {
 	background: #462ee2;
 	color: white;
 }
@@ -483,6 +445,7 @@ button:active {
 	display: flex;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+	height: 35px;
 	/*position: absolute;
 	bottom: 0;
 	left: 0;*/
@@ -495,8 +458,6 @@ button:active {
 .favorites-title {
 	background: #48e5ff;
 	border-right: 1px solid black;
-	display: flex;
-	align-items: center;
 	padding: 0 8px;
 }
 
@@ -505,6 +466,48 @@ button:active {
 	white-space: nowrap;
 	/*padding: 13px 10px;*/
 	margin: 0;
+	padding: 10px 0;
+}
+
+#scrolling-banner-wrapper {
+	width: 100%;
+	background: #48e5ff;
+	text-transform: uppercase;
+	font-family: "Helvetica";
+	/*padding: 10px 0;*/
+	overflow: hidden;
+	height: 35px;
+	box-sizing: border-box;
+}
+
+.scrolling-text-wrapper {
+	max-width: 100%;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 0 0 2em;
+	overflow: hidden;
+}
+
+#scrolling-banner-text {
+	white-space: nowrap;
+	overflow: hidden;
+	display: inline-block;
+	animation: scroll 20s linear infinite;
+	font-size: 12px;
+	padding: 10px 0;
+	height: 12px;
+	/*padding-top: 5px;*/
+}
+
+#scrolling-banner-text p {
+	display: inline-block;
+	line-height: 12px;
+	margin: 0;
+	font-size: 12px;
+}
+
+#scrolling-banner-text:hover p {
+	font-style: italic;
 }
 
 .open {
@@ -714,9 +717,22 @@ button:active {
 		box-sizing: border-box;
 	}
 
-
 	#scrolling-banner-text p {
 		font-size: 12px !important;
+	}
+}
+
+@media (max-width: 600px) {
+	.start-button {
+		width: 70px;
+	}
+
+	.start-bar-time {
+		width: 65px !important;
+	}
+
+	.start-window-button {
+		width: 120px;
 	}
 }
 

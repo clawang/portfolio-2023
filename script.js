@@ -44,6 +44,8 @@ window.addEventListener("load", function() {
 	let width = window.innerWidth;
 	let height = window.innerHeight - 35;
 
+	setMobile();
+
 	// Adding icons to desktop
 	icons.forEach((icon, index) => {
 		var div = document.createElement('div');
@@ -65,8 +67,11 @@ window.addEventListener("load", function() {
 		if(icon.type) {
 			//if(icon.title) div.title = icon.title;
 			div.addEventListener("click", function() {
-				// window.open(icon.link,'_blank');
-				openInfoPopup(icon);
+				if (mobileMode) {
+					window.open(icon.link,'_blank');
+				} else {
+					openInfoPopup(icon);
+				}
 			});
 		} else {
 			div.addEventListener("click", (e) => openPopup(icon.window));
@@ -113,17 +118,13 @@ window.addEventListener("load", function() {
 		});
 	}
 
-	const content = document.querySelector('#videography-page .content-window');
-	const video = document.getElementById('video');
-	if(content.clientWidth < 560) {
-		video.width = content.clientWidth-60;
-		video.height = (content.clientWidth-60)/560*315;
-	}
-
-	setMobile();
+	resizeVideo();
 });
 
 window.addEventListener('resize', function() {
+	mobileMode = Boolean(window.innerWidth < window.innerHeight || window.innerWidth < 600);
+
+	// reposition popups so that they don't get cropped
 	popups.forEach(popup => {
 		if(popup.status === 0) return;
 		const elmnt = popup.elmnt;
@@ -132,6 +133,8 @@ window.addEventListener('resize', function() {
 		elmnt.style.top = Math.min(Math.max(elmnt.offsetTop, 0), maxHeight) + "px";
     elmnt.style.left = Math.min(Math.max(elmnt.offsetLeft, 0), maxWidth) + "px";
 	});
+
+	// set mobile entry screen
 	const canvas = document.querySelector('canvas');
 	if(window.innerWidth < window.innerHeight || window.innerWidth < 600) {
 		canvas.style.display =  "none";
@@ -142,13 +145,21 @@ window.addEventListener('resize', function() {
 		canvas.style.display =  "block";
 		canvas.classList.remove('fade-out');
 	}
+
+	// replace start button text
+	document.getElementById('start-button-text').textContent = mobileMode ? "Claire" : "Claire Wang";
+
+	resizeVideo();
+});
+
+function resizeVideo() {
 	const content = document.querySelector('#videography-page .content-window');
 	const video = document.getElementById('video');
 	if(content.clientWidth < 560) {
 		video.width = content.clientWidth-60;
 		video.height = (content.clientWidth-60)/560*315;
 	}
-});
+}
 
 function dragElement(windowId) {
 	const elmnt = popups[windowId].elmnt;
@@ -326,6 +337,7 @@ function setMobile() {
 	document.querySelector('.mobile-mode').style.display = "block";
 
 	canvas.addEventListener('click', fadeOutCanvas);
+	document.getElementById('start-button-text').textContent = "Claire";
 }
 
 function fadeOutCanvas() {

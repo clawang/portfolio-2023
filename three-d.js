@@ -91,7 +91,7 @@ async function init() {
 function animate() {
 	requestAnimationFrame( animate );
 
-	logo.rotation.y += 0.01;
+	logo.rotation.y += 0.005;
 	//oval.rotation.y += 0.01;
 
 	renderer.render( scene, camera );
