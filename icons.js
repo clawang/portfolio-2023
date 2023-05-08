@@ -15,7 +15,6 @@ const icons = [
 		name:"Fred Again.. Generator",
 		type: 1,
 		title: "A website that given your name and a picture of you would give you a fake screenshot of a song Fred Again.. wrote about you in his Actual Life 3 album.",
-		subtitle: "The site ended up receiving 33,129 unique visitors in the first 24 hours and Fred Again.. himself posted it on his Instagram story.",
 		link: 'https://fred-again.netlify.app/',
 		left: 0.1583,
 		top: 0.375
